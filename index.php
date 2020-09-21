@@ -2,11 +2,11 @@
 include('header.php');
 
 ?>
-<div class="container-fluid fond">
+<div class="container-fluid fond" id="package">
 <div class="row">
   <div class="col-lg-6">
     <img alt="image1" src="img/im1.png" class="image1"/>
-   
+
   </div>
   <div class="col-lg-6 col-sm-12">
     <h2 class="best">The best comfort food will<br> always be greens, cornbread,<br> and fried chicken.</h2>
@@ -45,7 +45,7 @@ include('header.php');
       <img src="img/zv0lvbep.png" alt="Avatar" class="imagee" style="width:100%">
       <div class="overlay">
         <div class="text">When a man's stomach is full it makes no difference whether he is rich or poor.</div>
-        <p class="lo">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy<br> eirmod tempor invidunt ut labore et dolore magna.</p>
+        <p class="lo1">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy<br> eirmod tempor invidunt ut labore et dolore magna.</p>
           <button class="play1"><a>play</a></button>
           <p class="watch">Watch our story</p>
       </div>
@@ -53,7 +53,7 @@ include('header.php');
 </div>
 
 </div>
-<div class="container-fluid">
+<div class="container-fluid" id="about">
 <div class="row">
   <div class="col-lg-12">
     <h2 class="explo">Explore Our Foods</h2>
@@ -63,7 +63,7 @@ include('header.php');
 </div>
 <div class="container">
   <div class="row">
-    <div class="col-lg-4">
+    <div class="col-lg-4 col-xl-4 vf">
       <img src="img/ima11.png" alt="image1" class="img11">
       <div class="texteimg">
         <h3 class="ham">Ham Sandwich</h3>
@@ -88,7 +88,7 @@ include('header.php');
         <p class="description">Lorem ipsum dolor sit amet, consetetur<br> sadipscing elitr,</p>
       </div>
     </div>
-    <div class="col-lg-4">
+    <div class="col-lg-4 col-xl-4">
       <img src="img/ima12.png" alt="image1" class="img11">
       <div class="texteimg">
         <h3 class="ham">Ham Sandwich</h3>
@@ -112,7 +112,7 @@ include('header.php');
         <p class="description">Lorem ipsum dolor sit amet, consetetur<br> sadipscing elitr,</p>
       </div>
     </div>
-    <div class="col-lg-4">
+    <div class="col-lg-4 col-xl-4">
       <img src="img/ima13.png" alt="image1" class="img11">
       <div class="texteimg">
         <h3 class="ham">Ham Sandwich</h3>

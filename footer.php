@@ -1,5 +1,5 @@
 
-<div class="container-fluid fin">
+<div class="container-fluid fin" id="contact">
   <div class="container d">
 <img src="img/Groupe 100.png" class="imgauche"/>
 <img src="img/Groupe 100.png" class="imgdroit"/>

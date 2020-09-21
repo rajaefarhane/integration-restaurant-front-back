@@ -50,16 +50,16 @@ function openForm() {
      }
 </script>
   </head>
-  <div class="container-f banner">
+  <div class="container-f banner" id="menu">
     <nav>
       <label class="logo">
         Victorya
       </label>
       <ul>
-        <li><a href="#" class="active">Menu</a></li>
-        <li><a href="#">Package</a></li>
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Contact us</a></li>
+        <li><a href="#menu" class="active">Menu</a></li>
+        <li><a href="#package">Package</a></li>
+        <li><a href="#about">About us</a></li>
+        <li><a href="#contact">Contact us</a></li>
       </ul>
       <button <img src="img/admin.png" class="open-button" onclick="openForm()"> <img src="img/admin.png" class="open"> </img></button>
       <?php

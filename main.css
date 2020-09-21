@@ -57,8 +57,8 @@ nav a{
     color: #452268;
     font-size: 1.5em;
     font-weight: 500;
-   text-decoration: none;
-  transition: .5s;
+    text-decoration: none;
+    transition: .5s;
 }
 nav #icone{
 color: #452268;
@@ -397,13 +397,26 @@ font-size: 28px;
 .ima4{
   margin-top: 2vh;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*****************image comme video**********************************/
 
 .imagefond{
   position: relative;
   width: 100%;
-  margin-top: 10vh;
-  margin-left: 7vw;
+  margin-top: 20vh;
+
 }
 .imagee {
   display: block;
@@ -416,10 +429,10 @@ font-size: 28px;
   margin-top: 10vh;
   margin-left: 0vw;
   background-color: #0A4065;
-  opacity: 0.5;
+  opacity: 0.8;
   color: white;
   overflow: hidden;
-  width: 97%;
+  width: 97.2%;
   border-radius: 10px;
   height:0.5;
   transition: .5s ease;
@@ -433,20 +446,25 @@ font-size: 28px;
 
 .text {
   color: white;
-  font-size: 35px;
+  font-size: 4rem;
   position: absolute;
-  top: 25%;
-  left: 10%;
+  top: 19%;
+  left: 1vw;
+  font-family: georgia;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   z-index: 1000;
 }
 
-.lo{
+.lo1{
   color: white;
   font-size: 15px;
   position: absolute;
-  top: 55%;
+  top: 39vh;
   left: 28%;
+  font-family: Muli;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -458,15 +476,19 @@ font-size: 28px;
   height:10vh;
   border: 1px solid white;
   border-radius: 50%;
-  margin-left: 40vw;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 41vw;
   margin-top: 32%;
   color: white;
   font-weight: 400;
+  background-color: transparent;
 }
 .watch{
   position: absolute;
-  margin-left: 39vw;
-  margin-top: 39%;
+  margin-left: 40vw;
+  margin-top: 40%;
   color: white;
   font-weight: 400;
 }
@@ -483,7 +505,7 @@ font-size: 28px;
 }
 /***************partie3********************/
 .explo{
-  margin-top: 36vh;
+  margin-top: 38vh;
   text-align: center;
   font-weight: bold;
   font-family: Georgia;
@@ -494,7 +516,7 @@ font-size: 28px;
 
 }
 .lo{
-  margin-top: 29vh;
+  margin-top: 2vh;
   text-align: center;
   font-weight: 300;
     font-family: Muli;
@@ -503,14 +525,17 @@ font-size: 28px;
 }
 .img11{
   margin-top: 29vh;
-  width: 25vw;
+  width: 24vw;
+}
+.vf{
+  width: 5vw;
 }
 .texteimg{
   border-radius: 0px 0px 15px 15px;
   margin-top: -0.2vh;
   box-shadow: 0px 0px 10px black;
   border: 1px solid white;
-    width: 25vw;
+    width: 24vw;
     padding-bottom: 10vh;
   height: 25vh;
 }
