@@ -1,0 +1,917 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
+
+}
+body{
+  font-family: poppins;
+  margin: 0px;
+  padding: 0px;
+
+}
+.banner{
+height: 100vh;
+background: url(img/back.png) no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+nav{
+  width: 100%;
+  height: 20vh;
+}
+.logo{
+  font-size: 3vw;
+  color: #452268;
+  font-style: normal;
+  font-weight: 100;
+  padding:0 2vw;
+  padding-right: 3vw;
+  line-height: 10vh;
+  margin-top: 7vh;
+  margin-left: 5vw;
+}
+nav ul{
+  justify-content: center;
+  float: right;
+  margin-right: 38vw;
+  margin-top: 11vh;
+}
+nav li{
+  display:inline-block;
+  margin-right: 2vw;
+}
+nav a{
+  color:black;
+  font-size:1vw;
+  border-bottom: 1px solid transparent;
+  padding: 7px 10px;
+  border-radius: 3px;
+  color:#ABADAE;
+  text-decoration: none;
+}
+.active, a:hover{
+    color: #452268;
+    font-size: 1.5em;
+    font-weight: 500;
+   text-decoration: none;
+  transition: .5s;
+}
+nav #icone{
+color: #452268;
+font-size: 9vw;
+line-height: 80px;
+float: right;
+margin-right: 15vw;
+margin-top: 6vh;
+padding-left: 5vw;
+cursor: pointer;
+display: none;
+}
+.open{
+  width: 6vw;
+  height: 13vh;
+  margin-left: -0.5vw;
+}
+.open-button{
+  position: absolute;
+  width: 5vw;
+  height:10vh;
+  border: 1px solid #F98169;
+  border-radius: 50%;
+  margin-left: 64vw;
+  margin-top: 4vh;
+  overflow:hidden;
+  color: white;
+  box-shadow: 1px 1px 12px #F98169;
+  font-weight: 400;
+  background: #F98169;
+}
+.texte1{
+  margin-top: 20vh;
+  margin-left: 5vw;
+  color: #255A7E;
+  font-weight: 100;
+  font-size: 4rem;
+
+}
+
+.text2{
+  color: #0C3653;
+  margin-left: 5vw;
+  margin-top: 5vh;
+  font-weight: 100;
+}
+.btn{
+  background: #F98169;
+  border: 1px solid #F98169;
+  margin-left: 5vw;
+  margin-top: 10vh;
+  width: 10vw;
+  height: 12vh;
+  color: white;
+  box-shadow: 1px 1px 12px #F98169;
+  font-weight: 400;
+  display:inline-block;
+}
+.watch{
+  display:inline-block;
+  margin-left: 5vw;
+  position: absolute;
+  margin-top: 15vh;
+}
+.play{
+  position: absolute;
+  width: 5vw;
+   height:10vh;
+  border: 1px solid #F98169;
+   border-radius: 50%;
+margin-left: 18vw;
+  margin-top: 11vh;
+   overflow:hidden;
+   color: white;
+     box-shadow: 1px 1px 12px #F98169;
+     font-weight: 400;
+   background: #F98169;
+
+}
+.play:hover, .play::after{
+  width: 5vw;
+   height:10vh;
+  border: 1px solid #F98169;
+   border-radius: 50%;
+margin-left: 18vw;
+  margin-top: 10vh;
+   overflow:hidden;
+   color: black;
+     box-shadow: 1px 1px 12px #F98169;
+     font-weight: 400;
+   background: #F98169;
+
+}
+/******************forme popup**********************/
+/* Positionnez la forme Popup */
+.btnadmin{
+  margin-left: 1vw;
+}
+.btnafficher{
+  position: absolute;
+  width: 5vw;
+   height:6vh;
+  border: 1px solid #F98169;
+   border-radius: 50%;
+  margin-left: 1vw;
+  margin-top: -1vh;
+   overflow:hidden;
+   color: white;
+     box-shadow: 1px 1px 12px #F98169;
+     font-weight: 400;
+   background: #F98169;
+}
+.btnmodifier{
+  position: absolute;
+  width: 5vw;
+   height:6vh;
+  border: 1px solid #3CB371;
+   border-radius: 50%;
+  margin-left: 6vw;
+  margin-top: -1vh;
+   overflow:hidden;
+   color: white;
+     box-shadow: 1px 1px 12px #3CB371;
+     font-weight: 400;
+   background: #3CB371;
+}
+.btnsupprimer{
+  position: absolute;
+  width: 5vw;
+   height:6vh;
+  border: 1px solid red;
+   border-radius: 50%;
+   margin-left: 11vw;
+   margin-top: -1vh;
+   overflow:hidden;
+   color: white;
+     box-shadow: 1px 1px 12px red;
+     font-weight: 400;
+   background: red;
+}
+.btnajouter{
+  position: absolute;
+  width: 5vw;
+   height:6vh;
+  border: 1px solid #48D1CC;
+   border-radius: 50%;
+   margin-left: 16.3vw;
+   margin-top: -1vh;
+   overflow:hidden;
+   color: white;
+     box-shadow: 1px 1px 12px #48D1CC;
+     font-weight: 400;
+   background: #48D1CC;
+}
+#dec{
+  position: absolute;
+  float: right;
+  margin-left: 62vw;
+  margin-top: 15vh;
+  color: black;
+}
+#dec1{
+  color: black;
+  position: absolute;
+  float: right;
+  margin-left: 62vw;
+  margin-top: 20vh;
+}
+      .login-popup {
+      position: relative;
+      text-align: center;
+      width: 100%;
+      border-radius: 20px;
+      margin-left: 30vw;
+      }
+      #message{
+      	text-align:left;
+      	padding:20px;
+      	background-color:#800;
+      	border-top:dashed 1px #AAA;
+      	border-bottom:dashed 1px #AAA;
+      }
+      /* Masquez la forme Popup */
+      .form-popup {
+      display: none;
+      position: fixed;
+      left: 45%;
+      top:5%;
+      transform: translate(-45%,5%);
+      border: 2px solid #F98169;
+      border-radius: 20px;
+      box-shadow: 1px 1px 12px #F98169;
+      z-index: 9;
+      }
+      /* Styles pour le conteneur de la forme */
+      .form-container {
+      max-width: 50vw;
+      height: 100vh;
+      box-shadow: 1px 1px 12px #F98169;
+      padding: 20px;
+      border-radius: 20px;
+      background-color: #F98169;
+      opacity: 0.95;
+
+      }
+      /* Largeur complète pour les champs de saisie */
+      .form-container input[type=text], .form-container input[type=password] {
+      width: 100%;
+      height: 11vh;
+      padding: 10px;
+      margin: 5px 0 22px 0;
+      border: none;
+      border-radius: 10px;
+      justify-content: center;
+      text-align: center;
+      align-items:center;
+      background: black;
+      opacity: 0.8;
+      }
+      /* Quand les entrées sont concentrées, faites quelque chose */
+      .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+      background-color: gray;
+      color: white;
+      outline: none;
+      }
+      /* Stylez le bouton de connexion */
+      .form-container .btn {
+      background-color: #8ebf42;
+      color: #fff;
+      padding: 12px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      margin-left: 0vw;
+      margin-bottom:-7vh;
+      opacity: 0.8;
+      }
+      /* Stylez le bouton pour annuler */
+      .form-container .cancel {
+      background-color: #cc0000;
+      }
+      /* Planez les effets pour les boutons */
+      .form-container .btn:hover, .open-button:hover {
+      opacity: 1;
+      }
+
+/*************************fond*****************************************/
+.fond{
+  width: 100%;
+  height: 290vh;
+  background: url(img/fond2.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+.image1{
+  width: 50vw;
+
+}
+.best{
+  color: #0C3653;
+  font-weight: bold;
+  font-family: Georgia;
+  margin-top: 30vh;
+  font-size: 28px;
+}
+.lorem{
+  color: #8B8E8F;
+  font-family: Muli;
+  font-size: 14px;
+}
+.know{
+  background: #F98169;
+  border: 1px solid #F98169;
+  margin-top: 10vh;
+  width: 20vw;
+  height: 11vh;
+  color: white;
+  box-shadow: 1px 1px 12px #F98169;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.knowa:hover{
+  color: #452268;
+  font-size: 1.2em;
+  font-weight: 500;
+ text-decoration: none;
+transition: .5s;
+}
+.food{
+color: #0C3653;
+margin-left: 10vw;
+font-family: Georgia;
+font-weight: bold;
+font-size: 28px;
+}
+
+.ipsum{
+  color: #AEB2B4;
+  font-family: Muli;
+  margin-left: 10vw;
+  margin-top: 5vh;
+  font-size: 11px;
+}
+.More{
+  background: #F98169;
+  border: 1px solid #F98169;
+  margin-top: 10vh;
+    margin-left: 10vw;
+  width: 20vw;
+  height: 11vh;
+  color: white;
+  box-shadow: 1px 1px 12px #F98169;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.ima1{
+  display: block;
+  margin-left: 5vw;
+  width: 20vw;
+  padding-bottom: 4vh;
+  padding-right: 1vw;
+}
+.ima2{
+  margin-left: 2vw;
+  width: 22vw;
+  height: 49vh;
+}
+.ima3{
+  margin-top: -23vh;
+  width: 22vw;
+  height: 49vh;
+}
+.ima4{
+  margin-top: 2vh;
+}
+/*****************image comme video**********************************/
+
+.imagefond{
+  position: relative;
+  width: 100%;
+  margin-top: 10vh;
+  margin-left: 7vw;
+}
+.imagee {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  margin-top: 10vh;
+  margin-left: 0vw;
+  background-color: #0A4065;
+  opacity: 0.5;
+  color: white;
+  overflow: hidden;
+  width: 97%;
+  border-radius: 10px;
+  height:0.5;
+  transition: .5s ease;
+  z-index: 50;
+}
+
+.imagefond:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 35px;
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  text-align: center;
+  z-index: 1000;
+}
+
+.lo{
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 55%;
+  left: 28%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.play1{
+  position: absolute;
+  width: 5vw;
+  height:10vh;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-left: 40vw;
+  margin-top: 32%;
+  color: white;
+  font-weight: 400;
+}
+.watch{
+  position: absolute;
+  margin-left: 39vw;
+  margin-top: 39%;
+  color: white;
+  font-weight: 400;
+}
+
+.fond2{
+  margin: 0;
+  padding: 0;
+  margin-top: -58vh;
+  margin-left: -2vw;
+  width: 100%;
+  height: 118vh;
+  background-image:url(img/back1.png)no-repeat center center fixed;
+  z-index: 1;
+}
+/***************partie3********************/
+.explo{
+  margin-top: 36vh;
+  text-align: center;
+  font-weight: bold;
+  font-family: Georgia;
+  color: #0C3653;
+  font-size: 36px;
+  justify-content:center;
+  align-items: center;
+
+}
+.lo{
+  margin-top: 29vh;
+  text-align: center;
+  font-weight: 300;
+    font-family: Muli;
+  color: #AEB2B4;
+  font-size: 16px;
+}
+.img11{
+  margin-top: 29vh;
+  width: 25vw;
+}
+.texteimg{
+  border-radius: 0px 0px 15px 15px;
+  margin-top: -0.2vh;
+  box-shadow: 0px 0px 10px black;
+  border: 1px solid white;
+    width: 25vw;
+    padding-bottom: 10vh;
+  height: 25vh;
+}
+.ham{
+  font-family: : Georgia;
+  font-weight: bold;
+  font-size: 13px;
+  color: #0C3653;
+  margin-top: 5vh;
+  margin-left: 2vw;
+  display:inline-block;
+}
+.prix{
+  display: inline-block;
+  color: #F98169;
+  font-weight: bold;
+  font-family: Georgia;
+  margin-left: 3vw;
+}
+.description{
+  font-family: Muli;
+  font-weight: normal;;
+  color: #AEB2B4;
+  margin-left: 2vw;
+  font-size: 11px;
+  margin-top: 5vh;
+
+}
+.ligne2{
+  margin-top: -15vh;
+}
+/**********************parti4**********/
+.btnpartie3{
+
+  background: #F98169;
+  border: 1px solid #F98169;
+  margin-left: 40%;
+  margin-top: 10vh;
+  width: 20vw;
+  font-weight: bold;
+  font-family: Muli;
+  font-size: 15px;
+  height: 10vh;
+  color: white;
+  box-shadow: 1px 1px 12px #F98169;
+}
+.explo1{
+  margin-top: 35vh;
+margin-left: -27vw;
+  font-weight: bold;
+  font-family: Georgia;
+  color: #0C3653;
+  font-size: 35px;
+}
+/*******************************partie5******************************/
+.ligne3{
+  margin-top: 15vh;
+}
+.box{
+  width: 300px;
+  overflow: hidden;
+
+}
+.slide-img{
+  height: 290px;
+  position:relative;
+}
+.slide-img img{
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  box-sizing:border-box;
+
+}
+.overlay1{
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  transform: translate(-50%,-50%);
+  width: 90%;
+  height: 90%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.overlay1{
+  visibility: hidden;
+}
+.slide-img:hover .overlay1{
+  visibility: visible;
+  animation: fade 0.5s;
+}
+/**************footer*************************/
+.backfin{
+  width: 100%;
+  height: 100%;
+  margin-top: -28vh;
+  background-size: cover;
+}
+.fin{
+  width: 100%;
+  height: 100vh;
+  background-image: url(img/back1.png);
+  background-size: cover;
+  margin-top: -41vh;
+}
+.d{
+  margin-top: 40vh;
+
+}
+.imgauche{
+  margin-top: 2vh;
+  z-index: 1;
+}
+.imgdroit{
+  float: right;
+  margin-top: 40vh;
+  z-index: 1000;
+}
+
+.cadre{
+  width: 90%;
+  height: 70vh;
+  z-index: 1000;
+  margin-top: -80vh;
+  margin-left: 4vw;
+
+}
+.whant{
+color: #0C3653;
+font-weight: bold;
+font-size: 30px;
+font-family: georgia;
+margin-top: -60vh;
+margin-left: 10.5vw;
+display: flex;
+text-align: center;
+justify-content:center;
+align-items: center;
+
+}
+#name{
+  background-color: #F9FBFB;
+  border: 1px solid #F9FBFB;
+  border-radius: 2px 0 0 2px;
+  margin-left: 10vw;
+  height: 10vh;
+  width: 41%;
+  margin-top: 10vh;
+}
+.emailbtn{
+  background: #F98169;
+  border: 1px solid #F98169;
+  margin-left: 0vw;
+  margin-top: 10vh;
+  width: 15vw;
+  height: 10vh;
+  color: white;
+  font-weight: 400;
+  border-radius: 0 10px 10px 0 ;
+  display:inline-block;
+}
+.subscribe{
+  font-weight: bold;
+  font-weight: Muli;
+  font-size: 29;
+  padding: 2vw;
+}
+#name::placeholder{
+    color: #8B8E8F;
+    font-family: Muli;
+    font-weight: normal;
+    font-size: 22px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+};
+input{
+  background-color: #F9FBFB;
+  color: black;
+  font-family: Muli;
+  font-weight: normal;
+  font-size: 22px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.im{
+  height: 80vh;
+  margin-top: -18vh;
+  float: right;
+  margin-right: -1.4vw;
+  z-index: 1;
+}
+.menubas{
+  width: 50%;
+  height: 15vh;
+  border-top: 1px solid #707070;
+  border-bottom :1px solid #707070;
+  margin-top: 15vh;
+  margin-left: 3vw;
+}
+/**********menu bas**************************/
+.logobas{
+  font-size: 2.5vw;
+  color: #452268;
+  font-style: normal;
+  font-weight: 100;
+  padding-right: 8vw;
+  padding-right: 3vw;
+  line-height: 10vh;
+  margin-top: 2vh;
+  margin-left: 0vw;
+
+}
+.mb{
+  text-decoration: none;
+  color: #ABADAE;
+  margin-left: 3vw;
+}
+
+.fn{
+  margin-left: 5vw;
+  margin-top: 5vh;
+}
+.Copyright{
+  margin-top: 15vh;
+  margin-left: 5vw;
+  color: #ABADAE;
+  font-family: Muli;
+  font-weight:100;
+  font-size: 16px;
+}
+
+
+
+
+
+@keyframes fade {
+0%{
+  opacity: 0;
+}
+100%{
+  opacity: 1;
+}
+}
+
+
+
+
+
+@media (max-width:1024px) {
+  nav #icone{
+    display:none;
+  }
+  label.logo{
+    font-size: 32px;
+    padding-left:60px;
+  }
+nav ul{
+  margin-right: 20vw;
+
+}
+nav a {
+  font-size: 17px
+}
+}
+@media (max-width:917px) {
+  nav{
+    width: 100%;
+    background-color: rgba(222,	184,	135, 0.5);
+    padding: 0;
+    margin: 0;
+    left: 0;
+    right: 0;
+  }
+  nav #icone{
+    display:block;
+  }
+  nav ul {
+    background-color: rgba(222,	184,	135, 1);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 10vh;
+    left: -100%;
+    text-align:center;
+    transition: all .5s;
+    z-index: 10000;
+  }
+  .watch{
+    z-index: 1;
+    color: black;
+  }
+  nav li {
+    display: block;
+    padding: 6vh;
+    line-height: 30px;
+  }
+  nav a {
+    font-size: 20px;
+      color: black;
+  }
+a.active, a:hover{
+border: none;
+color: #452268;
+}
+nav ul.show{
+  left: 0;
+
+}
+
+
+
+
+.btn{
+  background: #F98169;
+  border: 1px solid #F98169;
+  margin-left: 15vw;
+  margin-top: 10vh;
+  width: 15vw;
+  height: 15vh;
+  color: white;
+  box-shadow: 1px 1px 12px #F98169;
+  font-weight: 400;
+  font-size: 1.7rem;
+  display:inline-block;
+}
+.watch{
+  display:inline-block;
+  margin-left: 9vw;
+  position: absolute;
+  font-size: 1.7rem;
+  margin-top: 15vh;
+}
+.play{
+  position: absolute;
+  width: 9vw;
+  height:14vh;
+  border: 1px solid #F98169;
+  border-radius: 50%;
+  margin-left: 32vw;
+  margin-top: 11vh;
+  overflow:hidden;
+  color: white;
+  font-size: 1.7rem;
+  box-shadow: 1px 1px 12px #F98169;
+  font-weight: 400;
+  background: #F98169;
+}
+}
+@media (min-width: 200px) and ( max-width:713px) {
+  .texte1{
+    margin-top: 7vh;
+    margin-left: 10vw;
+    color: #255A7E;
+    font-weight: 100;
+    font-size: 2rem;
+
+  }
+
+  .text2{
+    color: #0C3653;
+    margin-left: 5vw;
+    margin-top: 5vh;
+    font-weight: 200;
+    font-size: 1.05rem;
+  }
+  .btn{
+    background: #F98169;
+    border: 1px solid #F98169;
+    margin-right: 15vw;
+    margin-top: 6vh;
+    width: 40vw;
+    height: 15vh;
+    color: white;
+    box-shadow: 1px 1px 12px #F98169;
+    font-weight: 400;
+    font-size: 2rem;
+    display:block;
+  }
+  .watch{
+    display:block;
+    margin-left: 30vw;
+    font-size: 1.8rem;
+    margin-top: 4vh;
+  }
+  .play{
+
+    width: 29vw;
+    height:19vh;
+    border: 1px solid #F98169;
+    border-radius: 50%;
+    margin-left: 50vw;
+    margin-top: 10vh;
+    overflow:hidden;
+    color: white;
+    font-size: 2rem;
+    box-shadow: 1px 1px 12px #F98169;
+    font-weight: 400;
+    background: #F98169;
+  }
+}
