@@ -1,11 +1,13 @@
 <?php
 	session_start();
+	 include('traitement.php');
 	@$login=$_POST["login"];
 	@$pass=$_POST["pass"];
 	@$valider=$_POST["valider"];
 	$message="";
 	if(isset($valider)){
 		include("model/connexion.php");
+		include("model/traitement.php");
 		$res=$pdo->prepare("select * from admin where email=? and pass=? limit 1");
 		$res->setFetchMode(PDO::FETCH_ASSOC);
 		$res->execute(array($login,md5($pass)));
@@ -16,7 +18,7 @@
       //variable de session
 			$_SESSION["autoriser"]="oui";
 			$_SESSION["nomPrenom"]="rajae farhane";
-			header("location:index.php");
+			header("location:back.php");
 		}
 	}
 ?>
@@ -57,9 +59,10 @@ function openForm() {
       </label>
       <ul>
         <li><a href="#menu" class="active">Menu</a></li>
-        <li><a href="#package">Package</a></li>
+        <li><a href="#package" class="mn">Package</a></li>
         <li><a href="#about">About us</a></li>
         <li><a href="#contact">Contact us</a></li>
+        <li><a><button <img src="img/admin.png" class="open-button1" onclick="openForm()"> <img src="img/admin.png" class="open"> </img></button></a></li>
       </ul>
       <button <img src="img/admin.png" class="open-button" onclick="openForm()"> <img src="img/admin.png" class="open"> </img></button>
       <?php
@@ -67,7 +70,7 @@ function openForm() {
 if (isset($_SESSION['autoriser']))
 {
 ?>
-<li id="dec"><a href="#"> <?=$_SESSION["nomPrenom"]?></a></li>
+<li id="dec"><a href="back.php"> <?=$_SESSION["nomPrenom"]?></a></li>
 <li id="dec1"><a href="model/deconnexion.php">Deconnexion</a></li>
 
 <?php
